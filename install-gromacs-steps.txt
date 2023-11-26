@@ -1,0 +1,44 @@
+﻿#Install gromacs2022
+sudo apt update
+sudo apt upgrade
+ssudo snap install cmake --classic
+sudo apt install cmake
+wget http://ftp.gromacs.org/pub/gromacs/gromacs-2022.tar.gz
+tar xfz gromacs-2022.tar.gz
+cd gromacs-2022
+
+# Get and unpack the latest version of the GROMACS tarball
+wget http://ftp.gromacs.org/pub/gromacs/gromacs-2022.tar.gz
+tar xfz gromacs-2022.tar.gz
+cd gromacs-2022
+
+# Make a separate build directory and change to it
+mkdir build
+cd build
+
+# Run cmake with the path to the source as an argument
+cmake .. -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+
+# Run make, make check, and make install
+make
+make check
+sudo make install
+
+# Add GROMACS paths to your shell configuration file
+echo 'export PATH=/home/esg/gromacs-2022/bin:$PATH' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH=/home/esg/gromacs-2022/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
+
+# Source your updated bashrc
+source ~/.bashrc
+
+
+#to open bash tile
+
+nano ~/.bashrc
+
+
+# Check the GROMACS version
+gmx -v
+
+# Start GROMACS
+gmx
