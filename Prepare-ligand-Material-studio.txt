@@ -9,4 +9,5 @@
 9: Execute the Foresite tool: Calculation > Setup (Anneal)+ more(300-600 k)* increase Anneal cycle to have more beautiful graph > Quality (Fine) > Force field (Compass) > Electrostatic and Van der Waals: Ewald > Change RUN based on your core.
 10: Execute the Foresite tool: Calculation > Setup (Dynamic)+ more(NVT,experiment temperture 300.15 k, total simulation time 500000 ps( change to output must be a line in graph))* change output frame to have more beautiful graph)> termostat(Nose) > Quality (Fine) > Force field (Compass) > Electrostatic and Van der Waals: Ewald > Change RUN based on your core.
 11: Execute the Foresite tool: Calculation > Setup (Dynamic)+ more(NPT,experiment temperture 300.15 k, 0.0001gpa( eqau to 1 bar),total simulation time 500000 ps( change to output must be a line in graph))* change output frame to have more beautiful graph)> termostat(Nose) > Quality (Fine) > Force field (Compass) > Electrostatic and Van der Waals: Ewald > Change RUN based on your core.
-12: 
+12: Execute the Foresite tool: Calculation > Setup (Dynamic)+ more(NVE,experiment temperture 300.15 k,total simulation time 500000 ps( change to output must be a line in graph))* change output frame to have more beautiful graph)> termostat(Nose) > Quality (Fine) > Force field (Compass) > Electrostatic and Van der Waals: Ewald > Change RUN based on your core.
+
