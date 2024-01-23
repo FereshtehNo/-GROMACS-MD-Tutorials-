@@ -1,3 +1,5 @@
 1: To open the file, use either the .mol2 or .pdb format.
 2: Press "Ctrl + A" to select all, and then press "Ctrl + C" to copy.
 3: File > New > 3D Atomistic > Paste > Save > Rename (.xsd)
+4: Press "Ctrl + A" to select all. In the menu bar, locate the "Clean" option. This step ensures proper shaping by resolving any spatial obstacles among the atoms.
+5:
