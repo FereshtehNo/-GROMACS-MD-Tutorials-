@@ -5,4 +5,5 @@
 5: Press "Ctrl + A" to select all. In the menu bar, locate the "Calculate Bonds> calculate bonds".This step applies a double bond if it was inadvertently overlooked.
 6: Click on 'Amorphous Cell Tools,' then go to 'Calculation,' choose 'Task (construction),' set 'Quality' to 'Fine.' Due to the material's capability to form linear or branched structures, the density of polyethylene (in this example) can vary from 0.857 g/cm³ to a maximum of 0.975 g/cm³ (I've selected 0.9 g/cm³). Set 'Output' to '1 frame.' Choose your molecule, and set the weight (if 100%, the entire box is occupied with this molecule; sometimes there are multiple molecules). In this instance, the ligand's box size is 6.8 x 6.8 x 6.8 Å. Under 'Energy,' select 'Compass,' and keep the other settings as default. Ensure 'Advanced' is not ticked. Name your step. For 'Electrostatic,' use 'Ewald,' and for 'Van der Waals,' select 'Atom-based
 7: Execute the Foresite tool: Calculation > Setup (Energy) > More (do not click optimization) > Quality (Fine) > Force field (Compass) > Electrostatic and Van der Waals: Ewald > Change RUN based on your core.
-8: 
+8: Execute the Foresite tool: Calculation > Setup (Geometry) > Quality (Fine) > Force field (Compass) > Electrostatic and Van der Waals: Ewald > Change RUN based on your core.
+
