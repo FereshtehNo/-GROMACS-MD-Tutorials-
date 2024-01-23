@@ -1,0 +1,1 @@
+1: To open the file, use either the .mol2 or .pdb format.
