@@ -11,7 +11,9 @@
 
  - Run `gmx pdb2gmx -f protein.pdb -o protein.gro -water spc`.
 
- 🔧 Step 4: Add copper ions coordinates to the topology file.
+ 🔧 **Step 4:** Add copper ions coordinates to the topology file.
+
+
 
    ; id
 3585  CU2+  358  CU2+  CU  1546  2  63.5460  ; qtot 4
