@@ -13,12 +13,6 @@
 
  🔧 **Step 4:** Add copper ions coordinates to the topology file.
 
-I see, you want to maintain the exact formatting as it appears in your message. Here it is:
-
-markdown
-Copy code
-🔧 **Step 4:** Add copper ions coordinates to the topology file.
-
 ; id
 3585 CU2+ 358 CU2+ CU 1546 2 63.5460 ;qtot4
 ; id
