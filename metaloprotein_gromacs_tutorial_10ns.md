@@ -5,6 +5,7 @@
 - Run `gmx editconf -f cu.pdb -o cu.gro`.
 - Run `gmx genrestr -f cu.gro -o posre-cu.itp`.
 
-🔍 **Step 2:**
+🔧 Step 2: Open your protein PDB without any ions and delete hydrogens.
+
 
 
