@@ -7,5 +7,8 @@
 
 🔧 Step 2: Open your protein PDB without any ions and delete hydrogens.
 
+🔧 Step 3: Process the protein PDB file to generate a GROMACS coordinate file with the SPC water model.
+ -Run gmx pdb2gmx -f protein.pdb -o protein.gro -water spc.
+
 
 
