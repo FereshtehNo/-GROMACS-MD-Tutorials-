@@ -14,6 +14,7 @@
  🔧 **Step 4:** Add copper ions coordinates to the topology file.
 
 ![Cooper Ions Coordinate Topology File](cooperions_coordinate_topology_file.jpg)
+*It's an example. Make sure to change the ID based on your work.*
 
 
 
