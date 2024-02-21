@@ -30,6 +30,13 @@
   freely.
    - Run `gmx genrestr -f solvate.gro -o posres-strong.itp -fc 100000 100000 100000`.
 * Select: Group    12 (            Ion) has     4 elements.*
+
+  🔧  **Step 9:** Prepare the system for energy minimization by generating the simulation input file ("ions.tpr") using gmx grompp, integrating "minim.mdp", 
+ "solvate.gro", and "topol.top," allowing a maximum of 10 warnings with -maxwarn 10.
+   - Run `gmx grompp -f minim.mdp -c solvate.gro -p topol.top -o ions.tpr -maxwarn 10`.
+   - 
+
+  
   
   
 
