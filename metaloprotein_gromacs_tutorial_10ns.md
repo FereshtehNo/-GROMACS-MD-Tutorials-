@@ -19,8 +19,11 @@
  
 🔧 **Step 5:**  Merge the GRO file of copper ions with the GRO file of the protein, and adjust the atom numbers.
 
-🔧 **Step 6:** Utilize GROMACS to adjust the dimensions of the simulation box for the protein structure in the "protein.gro" file, setting it to 7x6x9 and centering the protein within the box at coordinates (3.5, 3, 3.2). Save the resulting structure to "box.gro".
+🔧 **Step 6:** Utilize GROMACS to adjust the dimensions of the simulation box for the protein structure in the "protein.gro" file, setting it to 7x6x9 and 
+    centering the protein within the box at coordinates (3.5, 3, 3.2). Save the resulting structure to "box.gro".
   - Run `gmx editconf -f protein.gro -o box.gro -box 7 6 9 -center 3.5 3 3.2`.
+
+🔧 **Step 7:** 
 
 
 
