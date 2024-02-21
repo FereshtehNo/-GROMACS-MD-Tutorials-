@@ -23,7 +23,9 @@
     centering the protein within the box at coordinates (3.5, 3, 3.2). Save the resulting structure to "box.gro".
   - Run `gmx editconf -f protein.gro -o box.gro -box 7 6 9 -center 3.5 3 3.2`.
 
-🔧 **Step 7:** 
+🔧 **Step 7:**  Solvate the system by adding water molecules around the solute.
+  - Run `gmx solvate -cp box.gro -cs spc216.gro -o solvate.gro -p topol.top`.
+  
 
 
 
