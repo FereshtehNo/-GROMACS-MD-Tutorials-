@@ -29,6 +29,7 @@
 🔧  **Step 8:** Generate position restraints for the ions in the solvated system to keep them fixed during the simulation while allowing other atoms to move 
   freely.
    - Run `gmx genrestr -f solvate.gro -o posres-strong.itp -fc 100000 100000 100000`.
+* Select: Group    12 (            Ion) has     4 elements.*
   
   
 
