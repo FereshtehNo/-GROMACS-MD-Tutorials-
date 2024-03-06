@@ -47,7 +47,7 @@
   🔧  **Step 13:**  Calculate potential energy.
    - Run `gmx energy -f em.edr -o potential.xvg`.
 
-   🔧  **Step 13:** Prepare system for NVT ensemble simulation.
+   🔧  **Step 14:** Prepare system for NVT ensemble simulation.
    - Run `gmx grompp -f nvt.mdp -c em.gro -p topol.top -o nvt.tpr -maxwarn 10`.
      
     
