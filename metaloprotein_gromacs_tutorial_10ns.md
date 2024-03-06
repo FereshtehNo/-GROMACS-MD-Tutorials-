@@ -49,7 +49,9 @@
 
    🔧  **Step 14:** Prepare system for NVT ensemble simulation.
    - Run `gmx grompp -f nvt.mdp -c em.gro -p topol.top -o nvt.tpr -maxwarn 10`.
-     
+
+   🔧  **Step 14:** Run NVT ensemble simulation.
+   - Run `gmx mdrun -deffnm nvt -v -nt 32`.
     
    
  
