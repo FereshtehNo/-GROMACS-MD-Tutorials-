@@ -43,6 +43,10 @@
 
   🔧  **Step 12:**  Run energy minimization.
    - Run `gmx mdrun -v -deffnm em -nt 8 -s em.tpr`.
+
+  🔧  **Step 13:**  Calculate potential energy.
+   - Run `gmx energy -f em.edr -o potential.xvg`.
+    
    
  
  
