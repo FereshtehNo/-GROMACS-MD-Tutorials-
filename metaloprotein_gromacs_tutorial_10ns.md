@@ -38,6 +38,9 @@
  🔧  **Step 10:** Add counterions to neutralize the system charge.
    - Run `gmx genion -s ions.tpr -o ions.gro -p topol.top -nname CL -nn 10`.
 
+  🔧  **Step 11:** Prepare system for energy minimization.
+   - Run `gmx grompp -f minim.mdp -c ions.gro -p topol.top -o em.tpr -maxwarn 10`.
+
  
  
 
