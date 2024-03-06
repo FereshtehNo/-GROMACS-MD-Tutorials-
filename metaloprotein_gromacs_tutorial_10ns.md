@@ -41,6 +41,9 @@
   🔧  **Step 11:** Prepare system for energy minimization.
    - Run `gmx grompp -f minim.mdp -c ions.gro -p topol.top -o em.tpr -maxwarn 10`.
 
+  🔧  **Step 12:**  Run energy minimization.
+   - Run `gmx mdrun -v -deffnm em -nt 8 -s em.tpr`.
+   
  
  
 
