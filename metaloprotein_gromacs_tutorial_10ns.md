@@ -36,6 +36,7 @@
    - Run `gmx grompp -f minim.mdp -c solvate.gro -p topol.top -o ions.tpr -maxwarn 10`.
 
  🔧  **Step 10:** Add counterions to neutralize the system charge.
+ 
     - Run `gmx genion -s ions.tpr -o ions.gro -p topol.top -nname CL -nn 10`.
 
  
