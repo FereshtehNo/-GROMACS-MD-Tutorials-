@@ -59,6 +59,9 @@
    🔧  **Step 17:** Prepare the system for NPT ensemble simulation.
    - Run `gmx grompp -f npt.mdp -c nvt.gro -p topol.top -o npt.tpr -maxwarn 10`.
 
+   🔧  **Step 18:**  Run NPT ensemble simulation.
+   - Run `gmx mdrun -v -deffnm npt -nt 32`.
+
     
    
  
