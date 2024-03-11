@@ -56,6 +56,9 @@
    🔧  **Step 16:** Calculate the temperature during the NVT ensemble simulation.
    - Run `gmx energy -f nvt.edr -o temp.xvg`.
 
+   🔧  **Step 17:** Prepare the system for NPT ensemble simulation.
+   - Run `gmx grompp -f npt.mdp -c nvt.gro -p topol.top -o npt.tpr -maxwarn 10`.
+
     
    
  
