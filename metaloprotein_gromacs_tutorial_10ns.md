@@ -62,6 +62,9 @@
    🔧  **Step 18:**  Run NPT ensemble simulation.
    - Run `gmx mdrun -v -deffnm npt -nt 32`.
 
+   🔧  **Step 19:**  Calculate the pressure during the NPT ensemble simulation.
+   - Run `gmx energy -f npt.edr -o pressure.xvg`.
+
     
    
  
