@@ -65,6 +65,9 @@
    🔧  **Step 19:**  Calculate the pressure during the NPT ensemble simulation.
    - Run `gmx energy -f npt.edr -o pressure.xvg`.
 
+   🔧  **Step 20:**  Prepare the system for MD (Molecular Dynamics) simulation.
+   - Run `gmx grompp  -f  md.mdp -c  npt.gro  -o  md.tpr  -maxwarn 10`.
+
     
    
  
