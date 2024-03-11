@@ -68,6 +68,12 @@
    🔧  **Step 20:**  Prepare the system for MD (Molecular Dynamics) simulation.
    - Run `gmx grompp  -f  md.mdp -c  npt.gro  -o  md.tpr  -maxwarn 10`.
 
+   🔧  **Step 21:** Run MD (Molecular Dynamics) simulation.
+   - Run `gmx mdrun -s md.tpr -deffnm  your_protein_name`.
+
+   🔧  **Step 22:** Calculate RMSD (Root Mean Square Deviation) of your protein during the MD simulation.
+   - Run `gmx rms -f your_protein_name.xtc -s md.tpr -o rmsd-your_protein_name.xvg `.
+     
     
    
  
