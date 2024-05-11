@@ -1,6 +1,10 @@
 Step 1: 📂 Open Files
 Open the protein.pdb file and the ligand.pdb file to start your docking simulation.
 
+Step 2: 🔍 Identify Binding Site Residues
+Locate the residues of the binding site that you previously determined based on your study. Use UCSF Chimera by navigating through: Tools > Sequence > Sequence. 
+This will allow you to view and select the relevant residues in your protein structure.
+
 
 
 
