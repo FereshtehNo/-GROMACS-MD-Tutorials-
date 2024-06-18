@@ -1,4 +1,4 @@
-Running Simulations
+🚀 Running Simulations
 To run a GROMACS simulation, use the following command structure:
 
 gmx mdrun -v -deffnm <simulation_name> -nt <number_of_threads>
