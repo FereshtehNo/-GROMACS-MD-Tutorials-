@@ -18,3 +18,18 @@ you need to adjust the settings in your npt.mdp file. Follow these steps:
 
 Open your npt.mdp file.
 Add or modify the following parameters to ensure correct temperature and pressure coupling:
+; Temperature coupling is on
+tcoupl = V-rescale ; modified Berendsen thermostat
+tc-grps = Protein Non-Protein ; two coupling groups - more accurate
+tau_t = 1 1 ; time constant, in ps
+ref_t = 298.15 298.15 ; reference temperature, in K
+
+; Pressure coupling is on
+pcoupl = c-rescale ; Pressure coupling on in NPT
+pcoupltype = isotropic ; uniform scaling of box vectors
+tau_p = 5.0 ; time constant, in ps
+ref_p = 1.0 ; reference pressure, in bar
+compressibility = 4.5e-5 ; isothermal compressibility of water, bar^-1
+
+Save the file and rerun your simulation using the gmx mdrun command.
+These settings ensure proper coupling of temperature and pressure in your simulation, which may resolve the CUDA error related to device-side asserts.
