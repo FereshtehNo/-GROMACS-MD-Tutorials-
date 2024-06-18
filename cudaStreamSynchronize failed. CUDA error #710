@@ -8,3 +8,13 @@ Example:
 gmx mdrun -v -deffnm npt -nt 8
 
 Troubleshooting
+
+CUDA Error #710
+If you encounter the following error when running your GROMACS simulation:
+
+cudaStreamSynchronize failed. CUDA error #710 (cudaErrorAssert): device-side assert triggered.
+
+you need to adjust the settings in your npt.mdp file. Follow these steps:
+
+Open your npt.mdp file.
+Add or modify the following parameters to ensure correct temperature and pressure coupling:
