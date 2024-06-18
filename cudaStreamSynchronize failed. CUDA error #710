@@ -19,6 +19,7 @@ you need to adjust the settings in your npt.mdp file. Follow these steps:
 Open your npt.mdp file.
 Add or modify the following parameters to ensure correct temperature and pressure coupling:
 ; Temperature coupling is on
+
 tcoupl = V-rescale ; modified Berendsen thermostat
 tc-grps = Protein Non-Protein ; two coupling groups - more accurate
 tau_t = 1 1 ; time constant, in ps
