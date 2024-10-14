@@ -9,7 +9,6 @@ cd gromacs-2022
 
 
 
-cd gromacs-2022
 
 # Make a separate build directory and change to it
 mkdir build
