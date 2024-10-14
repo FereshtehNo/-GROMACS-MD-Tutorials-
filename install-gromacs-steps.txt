@@ -7,9 +7,6 @@ wget http://ftp.gromacs.org/pub/gromacs/gromacs-2022.tar.gz
 tar xfz gromacs-2022.tar.gz
 cd gromacs-2022
 
-
-
-
 # Make a separate build directory and change to it
 mkdir build
 cd build
