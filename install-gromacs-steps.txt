@@ -7,7 +7,7 @@ wget http://ftp.gromacs.org/pub/gromacs/gromacs-2022.tar.gz
 tar xfz gromacs-2022.tar.gz
 cd gromacs-2022
 
-# Get and unpack the latest version of the GROMACS tarball
+
 wget http://ftp.gromacs.org/pub/gromacs/gromacs-2022.tar.gz
 tar xfz gromacs-2022.tar.gz
 cd gromacs-2022
