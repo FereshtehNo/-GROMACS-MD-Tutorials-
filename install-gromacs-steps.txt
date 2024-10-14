@@ -1,7 +1,7 @@
 ﻿#Install gromacs2022
 sudo apt update
 sudo apt upgrade
-ssudo snap install cmake --classic
+sudo snap install cmake --classic
 sudo apt install cmake
 wget http://ftp.gromacs.org/pub/gromacs/gromacs-2022.tar.gz
 tar xfz gromacs-2022.tar.gz
