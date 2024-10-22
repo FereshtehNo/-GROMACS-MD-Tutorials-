@@ -1,0 +1,61 @@
+; Run parameters
+integrator           = md
+nsteps               = 1000000      ; 2 ns
+dt                   = 0.002        ; 2 fs
+
+; Output control
+nstxout              = 10000        ; Save coordinates every 20 ps
+nstvout              = 10000        ; Save velocities every 20 ps
+nstenergy            = 10000        ; Save energies every 20 ps
+nstlog               = 10000        ; Update log file every 20 ps
+nstxout-compressed   = 10000        ; Save compressed coordinates
+
+; Bond parameters
+continuation         = yes          ; Restarting after NPT
+constraint_algorithm = lincs        ; holonomic constraints
+constraints          = all-bonds    ; all bonds constrained
+lincs_iter           = 1            ; accuracy of LINCS
+lincs_order          = 4            ; also related to accuracy
+
+; Neighbor searching
+cutoff-scheme        = Verlet
+ns_type              = grid         ; search neighboring grid cells
+nstlist              = 100          ; 
+rlist                = 3.0          ; 
+rcoulomb             = 3.0          ; افزايش از 0.9 nm به 3.0 nm
+rvdw                 = 3.0          ; افزايش از 0.9 nm به 3.0 nm
+
+; Electrostatics
+coulombtype          = PME          ; Particle Mesh Ewald for electrostatics
+pme_order            = 4            ; cubic interpolation
+fourierspacing       = 0.16         ; grid spacing for FFT
+
+; Temperature coupling
+tcoupl               = V-rescale    ; modified Berendsen thermostat
+tc-grps              = protein non-protein
+tau_t                = 0.1   0.1    ; time constant, in ps
+ref_t                = 298.15 298.15; reference temperature, in K
+
+; Pressure coupling
+pcoupl               = Parrinello-Rahman ; pressure coupling for NPT
+pcoupltype           = isotropic         ; uniform scaling of box vectors
+tau_p                = 2.0               ; time constant, in ps
+ref_p                = 1.0               ; reference pressure, in bar
+compressibility      = 4.5e-5            ; compressibility of water, bar^-1
+
+; Free energy parameters
+free_energy          = yes
+init_lambda_state    = 0                 ; initial lambda state
+delta_lambda         = 0                 ; no change in lambda
+calc_lambda_neighbors = 1                ; only neighboring states are considered
+nstdhdl              = 100               ; frequency to write dH/dl
+couple-moltype       = Protein_chain_A          ; molecule to decouple
+couple-lambda0       = vdw-q             ; interactions on at lambda=0
+couple-lambda1       = none              ; interactions off at lambda=1
+couple-intramol      = yes                ; تغيير از no به yes
+
+; Lambda scaling
+fep-lambdas          = 0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.00
+coul-lambdas         = 0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.00
+vdw-lambdas          = 0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55 0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.00
+temperature-lambdas  = 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
