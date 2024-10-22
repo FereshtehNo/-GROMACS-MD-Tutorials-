@@ -22,7 +22,7 @@ cutoff-scheme        = Verlet
 ns_type              = grid         ; search neighboring grid cells
 nstlist              = 100          ; 
 rlist                = 3.0          ; 
-rcoulomb             = 3.0          ; افزايش از 0.9 nm به 3.0 nm
+rcoulomb             = 3.0          ; 
 rvdw                 = 3.0          ; افزايش از 0.9 nm به 3.0 nm
 
 ; Electrostatics
