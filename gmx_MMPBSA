@@ -1,3 +1,9 @@
 #Install
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda --version
+conda create -n gmxMMPBSA python=3.11 -y
+conda activate gmxMMPBSA
+
 
