@@ -9,5 +9,13 @@ conda install -c conda-forge mpi4py ambertools numpy matplotlib scipy pandas sea
 python -m pip install gmx_MMPBSA
 gmx_MMPBSA_test
 
+#Amber
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+
+conda create -n ambertools -c conda-forge ambertools
+conda activate ambertools
+
+
 
 
