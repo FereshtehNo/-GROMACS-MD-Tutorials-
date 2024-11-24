@@ -5,5 +5,6 @@ source ~/.bashrc
 conda --version
 conda create -n gmxMMPBSA python=3.11 -y
 conda activate gmxMMPBSA
+conda install -c conda-forge mpi4py ambertools numpy matplotlib scipy pandas seaborn -y
 
 
