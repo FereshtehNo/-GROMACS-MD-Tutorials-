@@ -16,6 +16,11 @@ bash Miniconda3-latest-Linux-x86_64.sh
 conda create -n ambertools -c conda-forge ambertools
 cpptraj --version
 
+git clone https://github.com/alanwilter/acpype.git
+cd acpype
+sudo python setup.py install
+
+
 
 
 
