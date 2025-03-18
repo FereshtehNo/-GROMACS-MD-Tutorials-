@@ -1,0 +1,2 @@
+cd /d D:\Research-All\PET-Donya\Ligand
+obabel -:"O=C(OCC)C1=CC=CC=C1C(=O)OCC" -O monomer_PET.pdb --gen3d
